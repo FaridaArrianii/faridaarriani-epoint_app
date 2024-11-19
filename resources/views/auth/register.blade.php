@@ -18,7 +18,7 @@
     <label>Email Addres</label><br>
     <input type="email" id="email" name="email" value="{{ old('email') }}"><br>
 
-    @if (errors->has('email'))
+    @if ($errors->has('email'))
     <span class="text-danger">{{ $errors->first('email')}}</span>
     @endif
 
@@ -31,4 +31,10 @@
     @endif
 
     <br>
-    <label for="password_
+    <label for="password_confirmation" class="col-md-4 col-form-label text-md-end text-star">Confirm Password</label>
+    <div class"col-md-6">
+        <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
+    </div>
+    <input type="submit" value="Register">
+</form>
+@endsection

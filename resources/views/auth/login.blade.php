@@ -11,7 +11,7 @@
     <input type="email" id="email" name="email" value="{{ old('email') }}"><br><br>
     <label>Password</label><br>
     <input type="password" id="password" name="password"><br><br>
-    <input type="submit" value="login>
+    <input type="submit" value="Login">
 </form>
 
 @endsection

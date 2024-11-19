@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use illuminate\support\facades\Auth;
+use Illuminate\support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 class Admin
@@ -20,6 +20,6 @@ class Admin
         return redirect('dashboard');
     }
     return $next($request); 
-}
+    }
 }
 
